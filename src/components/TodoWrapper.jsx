@@ -13,7 +13,7 @@ export const TodoWrapper = () => {
 		setTodos([
 			...todos,
 			{ id: uuidv4(), task: todo, completed: false, isEditing: false },
-		]);
+		])
 	};
 
 	const toggleComplete = (id) => {
@@ -44,19 +44,22 @@ export const TodoWrapper = () => {
 		<div className="todo-wrapper">
 			<h1>To do list</h1>
 			<TodoForm addTodo={addTodo} />
-			{todos.map((todo, index) =>
-				todo.isEditing ? (
-					<EditTodoForm editTodo={editTask} task={todo} />
-				) : (
-					<Todo
-						task={todo}
-						key={index}
-						toggleComplete={toggleComplete}
-						deleteTodo={deleteTodo}
-						editTodo={editTodo}
-					/>
-				)
-			)}
+			<div className='todo-list'>
+			{todos.length < 1 ? 'No tasks found' : 
+				todos.map((todo, index) =>
+					todo.isEditing ? (
+						<EditTodoForm editTodo={editTask} task={todo} />
+					) : (
+						<Todo
+							task={todo}
+							key={index}
+							toggleComplete={toggleComplete}
+							deleteTodo={deleteTodo}
+							editTodo={editTodo}
+						/>
+					)
+				)}
+			</div>
 		</div>
 	);
 };

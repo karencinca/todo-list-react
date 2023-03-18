@@ -1,10 +1,27 @@
 .todo-wrapper {
     padding: 10px;
-    max-height: 85vh;
+}
+
+.todo-list {
+    color: #817a8a;
+    text-align: center;
+    max-height: 65vh;
     overflow-y: auto;
 }
 
 h1 {
     color: #817a8a;
     text-align: center;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    
+}
+*::-webkit-scrollbar-track {
+    background-color: white;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #817a8a;
+    border-radius: 20px;
 }
