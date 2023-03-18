@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './TodoForm.css'
 
 export const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState('')

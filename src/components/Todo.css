@@ -1,3 +1,25 @@
+.todo {
+    background-color: #efcaba;
+    color: #5c3d5b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.edit, .delete {
+    cursor: pointer;
+}
+
 .completed {
     text-decoration: line-through;
 }

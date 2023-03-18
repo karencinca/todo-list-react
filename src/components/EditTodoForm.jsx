@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './EditTodoForm.css'
 
 export const EditTodoForm = ({editTodo, task}) => {
     const [value, setValue] = useState(task.task)
@@ -18,7 +19,7 @@ export const EditTodoForm = ({editTodo, task}) => {
             placeholder="Update task"
             onChange={(e) => setValue(e.target.value)}
             />
-            <button type="sumbit" className="todo-btn">Update</button>
+            <button type="submit" className="todo-update">Update</button>
         </form>
     )
 }

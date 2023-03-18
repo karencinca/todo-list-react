@@ -1,0 +1,10 @@
+.todo-wrapper {
+    padding: 10px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #817a8a;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+.todo-form {
+    margin-bottom: 20px;
+    align-items: center;
+    max-height: 90vh;
+}
+
+form input {
+    width: 20rem;
+    height: 35px;
+    border: 2px solid #efcaba;
+    padding-left: 10px;
+}
+
+form button {
+    border: none;
+    background-color: #efcaba;
+    color: #5c3d5b;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    filter: brightness(0.95);
+}
